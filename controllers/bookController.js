@@ -38,3 +38,8 @@ exports.book_delete_post = function(req, res) {
 exports.book_update_get = function(req, res) {
     res.send('NOT IMPLEMENTED: Book update GET');
 };
+
+// Handle book update on POST.
+exports.book_update_post = function(req, res) {
+    res.send('NOT IMPLEMENTED: Book update POST');
+};
