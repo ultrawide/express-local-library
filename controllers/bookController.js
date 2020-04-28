@@ -68,7 +68,7 @@ exports.book_detail = function(req, res, next) {
         res.render('book_detail', { title: results.book.title, book: results.book, book_instances: results.book_instance } );
     });
 
-};
+};  
 
 // Display book create form on GET.
 exports.book_create_get = function(req, res) {
