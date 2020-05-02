@@ -1,7 +1,6 @@
 # express-local-library
 
-Deployed on heroku below:
-https://glacial-waters-76160.herokuapp.com/catalog
+Deployed on heroku: https://glacial-waters-76160.herokuapp.com/catalog
 
 Hi, this is a local library project that I worked on to learn the foundations of NodeJS/Express/MongoDB/PUG. Please contact me at colinchan02@gmail.com for any feedback; they're always appreciated! :)
 
