@@ -17,7 +17,7 @@ app.use(helmet());
 
 //Set up mongoose connection
 var mongoose = require('mongoose');
-var dev_db_url = 'mongodb+srv://ultrawide:dummy123@locallibrarycluster-t1nkn.azure.mongodb.net/local_library?retryWrites=true&w=majority';
+var dev_db_url = 'mongodb+srv://ultrawide:dummy123@locallibrarycluster-t1nkn.azure.mongodb.net/local_library?retryWrites=true';
 var mongoDB = process.env.MONGODB_URI || dev_db_url;
 mongoose.connect(mongoDB, { useNewUrlParser: true });
 var db = mongoose.connection;
