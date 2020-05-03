@@ -3,6 +3,7 @@ var Book = require('../models/book');
 const { body,validationResult } = require('express-validator/check');
 const { sanitizeBody } = require('express-validator/filter');
 
+var async = require('async');
 
 // Display list of all BookInstances.
 exports.bookinstance_list = function(req, res, next) {
@@ -97,14 +98,14 @@ exports.bookinstance_create_post = [
 ];
 
 // Display BookInstance delete form on GET.
-exports.bookinstance_delete_get = function(req, res) {
+exports.bookinstance_delete_get = function(req, res, next) {
     async.parallel({
         book_instance: function(callback) {
-            BookInstance.find()
+            BookInstance.findById(req.params.id).exec(callback)
         }
     }, function(err, results) {
         if (err) { return next(err); }
-        if (results.book==null) { // No results.
+        if (results.book_instance==null) { // No results.
             res.redirect('/catalog/bookinstances');
         }
         // Successful, so render.
