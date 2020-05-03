@@ -9,12 +9,12 @@ block content
   
     div(style='margin-left:20px;margin-top:20px')
 
-      h4 instance
+      h4 Book Instances:
     
       dl
       each book_instance in book_instances
         dt 
-          a(href=book_instance.url) #{book_instance.title}
+          a(href=book_instance.url) #{book.title}
         dd #{book_instance.status}
         dd #{book_instance.due_back_formatted}
 
