@@ -8,7 +8,7 @@ Gained fundamental knowledge about:
 * controllers
 * flow control using asynchronous operations 
 * views/forms using Pug
-* query a cloud hosted database using models 
+* query a cloud hosted database using models (ORM)
 * passing information to a view 
 * validate and sanitize input using express-validator
 * add, delete, and modify records in the database
