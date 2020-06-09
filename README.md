@@ -18,7 +18,7 @@ Gained fundamental knowledge about:
 * pushing sensitive data onto public repos (dotenv/nconf)
 
 To start locally:
-* clone package
+* clone repo
 * npm install
 * npm run serverstart
-* visit localhost with port 3000
+* visit localhost:3000
