@@ -15,7 +15,7 @@ Gained fundamental knowledge about:
 * security vulnerabilities
 * reducing traffic bandwith
 * deploying application onto a cloud host
-* pushing non-sensitive data dotenv/nconf
+* pushing sensitive data onto public repos (dotenv/nconf)
 
 To start locally:
 * clone package
